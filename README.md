@@ -20,8 +20,8 @@ This is a web app that allows you to convert Hinglish text into Doge language. I
 - Visually appealing design.
 - Built using HTML, CSS, and JavaScript.
 
-## 
-- Technologies Used
+## Technologies Used
+
 - HTML
 - CSS
 - JavaScript
