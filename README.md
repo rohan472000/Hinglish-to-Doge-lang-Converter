@@ -1,5 +1,3 @@
-###  For this repo, Copyright (c) 2023 Rohan Anand (anand00rohan@gmail.com), rohan472000 on GitHub
-
 # Hinglish to Doge Converter
 
 This is a try to give creativity to an Indian meme - **Doge meme**.
