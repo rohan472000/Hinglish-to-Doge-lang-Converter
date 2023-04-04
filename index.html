@@ -118,6 +118,7 @@
     function convertToDoge(humanText) {
     const hinglish_to_doge = {
         "bro": "vro",
+        "bhai":"vro",
         "chutiya": "chumtiya",
         "ho": "ho",
         "tum": "tm",
@@ -125,9 +126,7 @@
         "fuck": "fumk",
         "dog": "dogesh",
         "dogi": "doge",
-        "chacha": "chmcha",
-	    "hey":"hemy",
-	    "hi":"hee"
+        "chacha": "chmcha"
     };
     const words = humanText.split(" ");
     const doge_words = words.map(word => hinglish_to_doge[word] || word);
