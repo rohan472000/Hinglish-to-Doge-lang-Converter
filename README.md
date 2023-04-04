@@ -4,7 +4,7 @@ This is a try to give an creativity to an Indian meme **Doge meme**.
 
 This is a web app that allows you to convert Hinglish text into Doge language. It is built using HTML, CSS, and JavaScript and is designed to be easy to use and visually appealing.
 
-![image](https://user-images.githubusercontent.com/96521078/229765728-506b52b2-a037-4e3c-94a6-2eb027f49361.png)
+![Screenshot (147)](https://user-images.githubusercontent.com/96521078/229766164-1507c656-5b39-4d22-b117-7c652fc6423d.png)
 
 
 ## How to Use
