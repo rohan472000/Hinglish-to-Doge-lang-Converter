@@ -1,6 +1,6 @@
 # Hinglish to Doge Converter
 
-This is a try to give creativity to an Indian meme **Doge meme**.
+This is a try to give creativity to an Indian meme - **Doge meme**.
 
 This is a web app that allows you to convert Hinglish text into Doge language. It is built using HTML, CSS, and JavaScript and is designed to be easy to use and visually appealing.
 
