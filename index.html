@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hinglish to Doge Language Converter</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #F5F5F5;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+
+		.box {
+			width: 400px;
+			height: 100px;
+			border-radius: 10px;
+			background-color: white;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 20px;
+			padding: 10px;
+		}
+
+		.box input[type="text"] {
+			width: 80%;
+			height: 50px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			padding: 10px;
+			font-size: 16px;
+		}
+
+		.box button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-left: 10px;
+		}
+
+		.img-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.img-container img {
+			width: 200px;
+			height: 200px;
+			object-fit: contain;
+			border-radius: 50%;
+			margin-bottom: 20px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.human-img {
+			margin-right: 50px;
+		}
+
+		.doge-img {
+			margin-left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Hinglish to Doge Language Converter</h1>
+
+	<div class="container">
+		<div class="box human-box">
+			<label for="human-input">Hinglish Input:</label>
+			<input type="text" id="human-input" placeholder="Enter your Hinglish here...">
+			<button id="human-button">Convert</button>
+		</div>
+        
+		<div class="box doge-box">
+			<label for="doge-output">Doge Output:</label>
+			<input type="text" id="doge-output" placeholder="Doge output will appear here..." readonly>
+			<button id="doge-button" disabled>Copy</button>
+		</div>
+
+        
+	</div>
+
+	<div class="img-container">
+		<div class="human-img">
+			<img src="human.png" alt="Human">
+		</div>
+
+		<div class="doge-img">
+			<img src="rsz_1doge.png" alt="Doge">
+		</div>
+	</div>
+
+	<script>
+		const humanInput = document.getElementById("human-input");
+		const humanButton = document.getElementById("human-button");
+		const dogeOutput = document.getElementById("doge-output");
+        const dogeButton = document.getElementById("doge-button");
+
+    function convertToDoge(humanText) {
+    const hinglish_to_doge = {
+        "bro": "vro",
+        "chutiya": "chumtiya",
+        "ho": "ho",
+        "tum": "tm",
+        "vidhayak": "vimdhayak",
+        "fuck": "fumk",
+        "dog": "dogesh",
+        "dogi": "doge",
+        "chacha": "chmcha"
+    };
+    const words = humanText.split(" ");
+    const doge_words = words.map(word => hinglish_to_doge[word] || word);
+    const dogeText = doge_words.join(" ");
+    return `${dogeText}`;   //return `vro ${dogeText}`;
+     }
+
+	// function to handle click on human button
+	function handleHumanClick() {
+		const humanText = humanInput.value;
+		dogeOutput.value = convertToDoge(humanText);
+	}
+
+	// function to convert doge language to hinglish
+	function convertToHinglish(dogeText) {
+		// please viewer implement the logic to convert doge language to hinglish
+		// and return the converted text
+		return dogeText.replace(/vro/gi, "bro").replace(/chumtiya/gi, "chutiya");
+	}
+
+	// function to handle click on doge button
+	function handleDogeClick() {
+		const dogeText = dogeInput.value;
+		humanOutput.value = convertToHinglish(dogeText);
+	}
+
+	// add event listener for human button click
+	humanButton.addEventListener("click", handleHumanClick);
+
+	// add event listener for doge button click
+	dogeButton.addEventListener("click", handleDogeClick);
+</script>
+</body>
+</html>
