@@ -23,7 +23,7 @@ This is a web app that allows you to convert Hinglish text into Doge language. I
 
 ## Contributions
 
-Contributions are always welcome! If you want to contribute to this project, here's how you can do it:
+Contributions are always welcome! You can show your creativity here, If you want to contribute to this project, here's how you can do it:
 
 Fork this repository.
 - Create a new branch with your changes: `git checkout -b my-feature-branch`
